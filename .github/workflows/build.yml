@@ -30,3 +30,8 @@ jobs:
         run: |
           sh xcframework.sh
           zip -r boost.xcframework.zip boost.xcframework
+
+      - uses: ncipollo/release-action@v1
+        if: ${{ startsWith(github.ref, 'refs/tags') }}
+        with:
+          artifacts: "boost.xcframework.zip"
