@@ -27,5 +27,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build xcframework
-        run: sh xcframework.sh
-        run: zip -r boost.xcframework.zip boost.xcframework
+        run: |
+          sh xcframework.sh
+          zip -r boost.xcframework.zip boost.xcframework
