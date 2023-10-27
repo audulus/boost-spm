@@ -14,8 +14,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "boost",
-            url: "https://github.com/audulus/boost-spm/releases/download/v2/boost.xcframework.zip",
-            checksum: "19adabd7c4ff8c9247ecc8156d0cc7d568e235bbb011011c4a5d4342349325ae"
+            url: "https://github.com/audulus/boost-spm/releases/download/v3/boost.xcframework.zip",
+            checksum: "a0d0a3b5cab8f9cad85f68fd0448142498bafdd1a4165a771b14366bd6b6645b"
         )
     ]
 )
