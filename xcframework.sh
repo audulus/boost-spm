@@ -1,6 +1,7 @@
 
 set -e
 rm -rf boost_*
+rm -rf boost.xcframework
 sh boost.sh --boost-version 1.82.0 --boost-libs 'graph iostreams regex'
 mv dist/boost.xcframework .
 rm -rf dist src build
